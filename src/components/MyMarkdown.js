@@ -3,6 +3,11 @@ import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 let marked = require('marked');
 
+// ALLOWS LINE BREAKS WITH RETURN BUTTON
+marked.setOptions({
+  breaks: true,
+});
+
 class MyMarkdown extends React.Component {
    
       state = {
