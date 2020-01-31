@@ -6,15 +6,17 @@ let marked = require('marked');
 class MyMarkdown extends React.Component {
    
       state = {
-        markdown:  `I am a Heading\n=======\n\n I am a Sub-heading\n-----------\n
-        \n### I am a smaller heading\n \nParagraphs are separated\nby a 
+        markdown: `\n# Heading1\n## Heading2\n### Heading 3\n---\
+        \n#### I am a smaller heading\n \n Paragraphs are separated\nby a 
        blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline
-        break\n\nText attributes *italic*, **bold**, \n'monospace',
-        ~~strikethrough~~ .\n\nUnordered list:\n\n  * bananas\n  * kiwi\n  * oranges\n
-        \n\nNumbered list:\n\n  1. milk\n  2. eggs\n  3. 
-       butter\n\n  * Life is more beautiful with embedded images:
-     
-       ![React Logo w/ Text](https://goo.gl/Umyytc) `
+        break\n\nText attributes *italic*, **bold**, or, wow... **_both italic and bold!_** \n
+        .\n\nUnordered list:\n\n  * bananas\n  * kiwi\n  * oranges\n
+        \n\nNumbered list:\n\n  1. milk\n  2. eggs\n  3. butter\n 
+        Hey, you can also ~~cross things out~~.
+        \n### More awesome stuff\n Inline code:\nFrom the console, run <code>console.log('Hello world!');</code>to see the output. \n\n---\n\n#### Code block:<code>\n javascript\nfunction sayHello() {\n return 'Hello world!';\n}</code>\n\n---\n\n#### 
+         \n#### Blockquote:  \n> Simplicity is about subtracting the obvious and adding the meaningful. -John Maeda \n\n---\n#### 
+         \n Some code \`<div></div>\`  \`<pre></pre>\` between 2 backticks.\n There's also a [link](https://www.google.com)\n
+Life is more beautiful with embedded images:![React Logo w/ Text](https://goo.gl/Umyytc) `
      
     }
   
