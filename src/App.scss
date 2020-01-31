@@ -1,0 +1,102 @@
+$primary: #2C3E50;
+$text-light:#f6f8f8;
+$dark-body:#0f151b;
+
+@mixin centered{
+  text-align:center !important;
+}
+
+$shadow: 3px 3px 5px #2C3E50;
+
+body{
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: $dark-body !important;
+}
+
+.jumbotron { 
+  background-color:$text-light !important;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+  margin-bottom: 3rem;
+}
+
+
+h1.title{ 
+  color: $primary;
+  font-size: 3rem;
+}
+
+.fas{
+  margin-right:1rem;
+  font-size:3rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+textarea{
+  background-color:$text-light;
+  color:$dark-body;
+  padding-left:1.5rem;
+  margin-right:1rem;
+  padding-top:1rem;
+  border: 2px inset $primary;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+  
+}
+
+h4{
+  color:$text-light;
+  font-style: italic;
+}
+
+#htmlArea{  
+ 
+  padding-left:1.5rem;
+  padding-top:2.5rem;
+  color:$text-light;
+}
+
+
+#markdown{
+  
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  padding: 2rem 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width:95%;
+  height:400px;
+}
+
+@media (min-width: 576px){
+
+.jumbotron {
+    padding: 2.5rem 2rem !important;
+}
+#markdown{
+  margin-left:2rem;
+  width:90%;
+  height:auto;
+
+}
+}
