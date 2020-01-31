@@ -34,12 +34,12 @@ class MyMarkdown extends React.Component {
                     type='text'
                     value={markdown}
                     onChange={(event) => this.writeMarkdown(event.target.value)}
-                    id='markdown'
+                    id='editor'
                     className='col-xs-10'>
                     </textarea>
                 </div>
               
-                  <div dangerouslySetInnerHTML={{__html:marked(markdown)}}  id='htmlArea' className=' col-md-6 col-xs-10 '>
+                  <div dangerouslySetInnerHTML={{__html:marked(markdown)}}  id='preview' className=' col-md-6 col-xs-10 '>
                          
                     
                   </div>
